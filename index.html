@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>   
+        <link rel = "stylesheet" href = "css/styles.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <main>
+            <section id = "content">
+                <header>
+                    <h2>Password Generator</h2>
+                </header>
+                
+                <section id = "main_section">
+
+                        <h4>New password</h4>
+                        <div id = "input">
+                        <input type = "text" value = "e7_5y$BmrJ_Xl54~7s.3" id = "generated_password" disabled>
+                        <span><i id = "add_to_clipboard" class="fa-regular fa-clipboard" title="Copy your password"></i></span>
+                        </div>
+                        
+                    </div>
+
+                    <div id = "length">
+                        <h4 for = "password_length">Password Length: <span id = "length_value">15</span> Characters</h4>
+                        <div id = "length-input">
+                            <input id = "password_length" type="range" min = "3" max = "30" step = "1">
+                        </div>
+
+                    </div>
+
+                    <section id = "password_settings">
+                        <h4>Password Settings (Include)</h4>
+                        
+                            <ul>
+                                <li class = "option">
+                                    <input type = "checkbox" id  ="lowercase">
+                                    <label for = "lowercase">Lowercase</label>
+                                </li>
+                                <li class = "option">
+                                    <input type = "checkbox" id  ="uppercase">
+                                    <label for = "uppercase">Uppercase</label>
+                                </li>
+                                <li class = "option">
+                                    <input type = "checkbox" id  ="number">
+                                    <label for = "number">Numbers</label>
+                                </li>
+                                <li class = "option">
+                                    <input type = "checkbox" id  ="symbol">
+                                    <label for = "symbol">Symbols</label>
+                                </li>
+                            </ul>
+                            <button id = "generate">Generate Password</button>
+                            <a href = "http://autumnfrontend.io/" style = "color:#1a2f409e;">View Portfolio</a>
+                    </section>
+                </section>
+            </section>
+
+    </main>
+    <script src = "js/script.js"></script>
+</body>
+</html>

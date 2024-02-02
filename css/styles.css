@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*, *::after, *::before{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(50deg, #5383A6, #284B66);
+}
+
+main #content{
+    background:rgba(255,255,255,0.9);
+    border-radius: 25px;
+    width:700px;
+    height:430px;
+}
+
+@media(max-width:699px){
+    main #content{
+        margin: auto;
+        background:rgba(255,255,255,0.9);
+        border-radius: 25px;
+        width:300px;
+        height:430px;
+    }
+}
+main header{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width:700px;
+    height:60px;
+    border-radius: 25px 25px 0px 0px;
+    border-bottom: 1px #1a2f409e solid;
+    background-color: #eaf3fdc5;
+}
+
+@media(max-width:699px){
+    main header{
+        width:300px;
+    }
+}
+main header h2{
+    padding:15px;
+}
+
+main #main_section{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin: 70px auto;
+}
+
+main #main_section h4{
+    font-size: 15px;
+    margin: 5px 15px;
+}
+main #main_section #input{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+main #main_section #input #add_to_clipboard{
+    margin-left:-65px;
+    transition: 1s ease;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.592);
+}
+main #main_section #input #add_to_clipboard:hover{
+    color:#37546c;
+}
+
+main #main_section #input input{
+    padding:7.5px;
+    margin: auto;
+    width:100%;
+    margin:0 15px;
+    border: 1px #1a2f4063 solid;
+    border-radius: 5px;
+}
+
+main #main_section #input input{
+    padding:7.5px;
+    margin: auto;
+    width:100%;
+    margin:0 15px;
+    border: 1px #1a2f4063 solid;
+    border-radius: 5px;
+}
+
+main #main_section #length #length-input{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+main #main_section #length #password_length{
+    padding:7.5px;
+    margin: auto;
+    width:96%;
+    margin:0 15px;
+    accent-color: #1a2f4063;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+main #main_section #password_settings{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    accent-color: #1a2f4063;
+}
+
+
+main #main_section #password_settings ul{
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 20%);
+    width:60%;
+    margin: auto;
+}
+@media(max-width:699px){
+    main #main_section #password_settings ul .option{
+        width:100%;
+        margin: auto;
+    }
+}
+
+
+main #main_section #password_settings ul .option{
+    display: flex;
+    text-align: center;
+    width:100%;
+    align-items: center;
+    margin:5px;
+}
+@media(max-width:699px){
+    main #main_section #password_settings ul .option{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+main #main_section #password_settings ul .option input{
+    margin:5px;
+}
+
+
+
+
+main #main_section #password_settings #generate{
+   width:80%;
+   padding:7.5px;
+   margin: 20px auto;
+   background:#1a2f40;
+   color:white;
+   outline:none;
+   border:none;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: 1s ease;
+   margin-bottom: 15px;
+}
+
+
+main #main_section #password_settings #generate:hover{
+    background:#37546c;
+}
+
+#password_strength{
+    color:rgb(209, 183, 96);
+}
